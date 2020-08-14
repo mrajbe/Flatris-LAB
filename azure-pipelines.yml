@@ -26,6 +26,6 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
-  displayName: 'ArchiveFiles | DefaultWorkingDirectory - $(System.DefaultWorkingDirectory) | Build.BinariesDirectory - $(Build.BinariesDirectory) | Build.ArtifactStagingDirectory - $(System.Build.ArtifactStagingDirectory)'
+  displayName: 'ArchiveFiles | DefaultWorkingDirectory - $(System.DefaultWorkingDirectory) | Build.BinariesDirectory - $(Build.BinariesDirectory) | Build.ArtifactStagingDirectory - $(Build.ArtifactStagingDirectory)'
