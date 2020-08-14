@@ -16,6 +16,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
@@ -25,7 +30,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'PublishBuildArtifacts'
   
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+
