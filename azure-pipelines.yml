@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '9987d1b8-364b-424c-b834-52dd23ce5d2d'
+  azureSubscription: 'Free Trial (9c253a00-02fe-4e3f-9265-bb47ad66738c)'
 
   # Web app name
-  webAppName: 'testgame-bc'
+  webAppName: 'mrmyflatrislinux'
 
   # Environment name
-  environmentName: 'testgame-bc'
+  environmentName: 'production'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
